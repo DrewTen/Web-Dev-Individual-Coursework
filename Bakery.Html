@@ -8,54 +8,53 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body clas="font-monospace">
         <!--Navigation-->
-        <nav class="navbar py-3 bg-warning border border-2 border-info">
-            <div class="container-fluid">
-                <div class="d-flex justify-content-between w-100 align-items-center"> 
-
-                    <h1 class="navbar-brand text-info m-0">The Golden crust</h1>
-                        <div class="ms-auto">
-                            <a class="btn btn-info" href="#season selections">Season Selections</a>
-                        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-warning sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3" href="#">
+                    <i class="fas fa-bread-slice me-2"></i>The Golden Crust
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#carousel">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seasons">Season Selections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
 
         <br></br>
-        <!--Headline-->
-        <header>
-            <div class="container">
-                <div id="Carousel" class="carousel slide w-75 mx-auto border border-5 border-warning " data-bs-ride="carousel">
-                    <ol class ="carousel-indicators">
-                        <li data-bs-target="#Carousel" data-bs-slide-to="0" class="active"></li>
-                        <li data-bs-target="#Carousel" data-bs-slide-to="1"></li>
-                        <li data-bs-target="#Carousel" data-bs-slide-to="2"></li>
-                    </ol>
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="CarrotCake.jpg" alt="Carrot Cake">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="CinnamonRolls.jpg"  alt="Cinnamon Rolls">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="ChocolateTwist.jpg"  alt="Chocolate Twist">
+        <!--Carousel-->
+            <div id="carousel" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <img src="CarrotCake.jpg" class="d-block mx-auto img-fluid" alt="Carrot Cake">
                         </div>
                     </div>
-
-                    <a class="carousel-control-prev" href="#Carousel" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </a>
-
-                    <a class="carousel-control-next" href="#Carousel" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </a>    
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="CinnamonRoll.jpg" class="d-block mx-auto img-fluid" alt="Cinnamon Rolls">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="ChocolateTwist.jpg" class="d-block mx-auto img-fluid" alt="Chocolate Twists">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </header>
 
         <br></br>
         <!-- Seaasonal Products-->
@@ -219,6 +218,6 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrao.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
